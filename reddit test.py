@@ -31,6 +31,5 @@ if response.json().get('details') != None:
     payload['otp'] = otp
     response = session.post(url, headers=headers, data=payload)
     session.headers.update()
-print(response.json())
 
 #Continue your session here
